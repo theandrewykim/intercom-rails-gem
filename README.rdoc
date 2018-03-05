@@ -1,0 +1,1 @@
+App with an Intercom integration setup through Segment.io's analytics library
