@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
 
 	skip_before_action :logged_in?
 
+
 	def new
 		render '/sessions/new'
 	end
@@ -21,7 +22,12 @@ class SessionsController < ApplicationController
 
 	def destroy
 		session.clear
+		IntercomRails::ShutdownHelper::intercom_shutdown_helper(cookies)
+		binding.pry
 		redirect_to '/'
+	end
+
+	def shutdown_intercom
 	end
 
 end
