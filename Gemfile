@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'
 gem 'intercom-rails'
+gem 'pry'
 
 
 
@@ -56,7 +57,6 @@ group :test do
   gem 'table_print'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
-  gem 'faker'
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'database_cleaner'
